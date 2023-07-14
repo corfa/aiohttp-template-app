@@ -20,6 +20,7 @@ class AppContext:
     """
     def __init__(self):
         self.db_url = os.getenv('URL_DB', '')
+       
         self.db = None
 
     async def on_startup(self, app=None):
