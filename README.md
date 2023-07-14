@@ -7,6 +7,5 @@
     - Configuration using environment variables with dotenv
     - Convenient setup and shutdown handlers for your application context 
 ## Running the Service
-1) Install all the required dependencies: ```pip install -r requirements.txt```
-2) Create a ```.env``` file in the project's root directory and fill it with the necessary configuration variables. Refer to the example file ```.template.env.```
-3) Execute the ```main.py``` file.
+1) run command: ```docker-compose build```
+2) run command: ```docker-compose up```
