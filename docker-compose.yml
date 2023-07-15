@@ -6,9 +6,7 @@ services:
     restart: always
 
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./app/
     depends_on:
       - postgres
     restart: always

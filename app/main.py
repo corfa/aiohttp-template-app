@@ -1,8 +1,8 @@
 from aiohttp import web
 import asyncio
 
-from app import routes
-from app.context import AppContext
+import routes
+from context import AppContext
 
 async def create_app():
     ctx = AppContext()

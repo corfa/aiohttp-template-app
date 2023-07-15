@@ -1,8 +1,8 @@
 from aiohttp import web
 
-from app.storage import get_tasks
-from app.context import AppContext
-from app import models
+from storage import get_tasks
+from context import AppContext
+import models
 
 async def handle(request: web.Request, ctx: AppContext) -> web.Response:
     tasks = await get_tasks(context=ctx)

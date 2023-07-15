@@ -1,7 +1,7 @@
 import typing as tp
 
-from app.context import AppContext
-from app import models
+from context import AppContext
+import models
 
 async def get_tasks(context: AppContext) -> tp.List[models.Task]:
     sql = '''

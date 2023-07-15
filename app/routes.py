@@ -1,7 +1,7 @@
 from aiohttp import web
 
-from app.api.v1 import get_tasks
-from app.context import AppContext
+from api.v1 import get_tasks
+from context import AppContext
 
 def wrapper_handler(handler,context):
     async def wrapper(request):
